@@ -1,0 +1,123 @@
+# -----------------------------
+
+# 📦 Node / Package managers
+
+# -----------------------------
+
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# -----------------------------
+
+# 🧠 Turbo / Monorepo
+
+# -----------------------------
+
+.turbo/
+dist/
+build/
+.cache/
+
+# -----------------------------
+
+# 🟦 TypeScript
+
+# -----------------------------
+
+*.tsbuildinfo
+
+# -----------------------------
+
+# ⚡ Logs
+
+# -----------------------------
+
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -----------------------------
+
+# 🔐 Environment variables
+
+# -----------------------------
+
+.env
+.env.*
+!.env.example
+
+# -----------------------------
+
+# 🧬 Prisma
+
+# -----------------------------
+
+# Keep schema, ignore generated client
+
+node_modules/.prisma/
+.prisma/
+prisma/dev.db
+prisma/dev.db-journal
+
+# -----------------------------
+
+# ⚛️ Next.js
+
+# -----------------------------
+
+.next/
+out/
+
+# -----------------------------
+
+# 🧪 Testing
+
+# -----------------------------
+
+coverage/
+.nyc_output/
+
+# -----------------------------
+
+# 🧹 OS / Editor
+
+# -----------------------------
+
+.DS_Store
+Thumbs.db
+
+# VSCode
+
+.vscode/*
+!.vscode/extensions.json
+
+# JetBrains
+
+.idea/
+
+# -----------------------------
+
+# 🐳 Docker
+
+# -----------------------------
+
+docker-compose.override.yml
+
+# -----------------------------
+
+# 🧪 Misc
+
+# -----------------------------
+
+*.local
+*.tmp
+*.temp

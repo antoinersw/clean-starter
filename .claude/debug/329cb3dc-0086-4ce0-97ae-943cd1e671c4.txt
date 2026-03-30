@@ -1,0 +1,191 @@
+2026-01-21T09:19:29.006Z [DEBUG] [init] configureGlobalMTLS starting
+2026-01-21T09:19:29.006Z [DEBUG] [init] configureGlobalMTLS complete
+2026-01-21T09:19:29.006Z [DEBUG] [init] configureGlobalAgents starting
+2026-01-21T09:19:29.006Z [DEBUG] [init] configureGlobalAgents complete
+2026-01-21T09:19:29.052Z [DEBUG] Using bash path: "C:\Program Files\Git\bin\bash.exe"
+2026-01-21T09:19:29.064Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169064
+2026-01-21T09:19:29.064Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.066Z [DEBUG] Temp file written successfully, size: 27900 bytes
+2026-01-21T09:19:29.066Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.066Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169064 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.067Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.092Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169092
+2026-01-21T09:19:29.092Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.094Z [DEBUG] Temp file written successfully, size: 27982 bytes
+2026-01-21T09:19:29.094Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.094Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169092 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.095Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.114Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169114
+2026-01-21T09:19:29.115Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.116Z [DEBUG] Temp file written successfully, size: 28019 bytes
+2026-01-21T09:19:29.117Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.117Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169114 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.117Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.145Z [DEBUG] Stats cache does not exist, returning empty cache
+2026-01-21T09:19:29.146Z [DEBUG] Stats cache empty, processing all historical data in background
+2026-01-21T09:19:29.160Z [DEBUG] Loading skills from: managed=C:\ProgramData\ClaudeCode\.claude\skills, user=C:\Users\malchik\.claude\skills, project=[]
+2026-01-21T09:19:29.199Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-01-21T09:19:29.201Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir 'C:\ProgramData\ClaudeCode\.claude\skills'
+    at readdirSync (unknown)
+    at <anonymous> (B:/~BUN/root/claude.exe:12:1903)
+    at HX (B:/~BUN/root/claude.exe:11:34695)
+    at readdirSync (B:/~BUN/root/claude.exe:12:1864)
+    at mB$ (B:/~BUN/root/claude.exe:1463:380)
+    at mB$ (B:/~BUN/root/claude.exe:1463:1350)
+    at <anonymous> (B:/~BUN/root/claude.exe:1463:4440)
+    at <anonymous> (B:/~BUN/root/claude.exe:1463:5171)
+    at A (B:/~BUN/root/claude.exe:11:7245)
+    at wVE (B:/~BUN/root/claude.exe:4094:4342)
+2026-01-21T09:19:29.202Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir 'C:\Users\malchik\.claude\skills'
+    at readdirSync (unknown)
+    at <anonymous> (B:/~BUN/root/claude.exe:12:1903)
+    at HX (B:/~BUN/root/claude.exe:11:34695)
+    at readdirSync (B:/~BUN/root/claude.exe:12:1864)
+    at mB$ (B:/~BUN/root/claude.exe:1463:380)
+    at mB$ (B:/~BUN/root/claude.exe:1463:1350)
+    at <anonymous> (B:/~BUN/root/claude.exe:1463:4483)
+    at <anonymous> (B:/~BUN/root/claude.exe:1463:5171)
+    at A (B:/~BUN/root/claude.exe:11:7245)
+    at wVE (B:/~BUN/root/claude.exe:4094:4342)
+2026-01-21T09:19:29.202Z [DEBUG] Error log sink initialized
+2026-01-21T09:19:29.269Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude\todos\329cb3dc-0086-4ce0-97ae-943cd1e671c4-agent-329cb3dc-0086-4ce0-97ae-943cd1e671c4.json.tmp.36736.1768987169269
+2026-01-21T09:19:29.284Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-21T09:19:29.284Z [DEBUG] Renaming C:\Users\malchik\.claude\todos\329cb3dc-0086-4ce0-97ae-943cd1e671c4-agent-329cb3dc-0086-4ce0-97ae-943cd1e671c4.json.tmp.36736.1768987169269 to C:\Users\malchik\.claude\todos\329cb3dc-0086-4ce0-97ae-943cd1e671c4-agent-329cb3dc-0086-4ce0-97ae-943cd1e671c4.json
+2026-01-21T09:19:29.285Z [DEBUG] File C:\Users\malchik\.claude\todos\329cb3dc-0086-4ce0-97ae-943cd1e671c4-agent-329cb3dc-0086-4ce0-97ae-943cd1e671c4.json written atomically
+2026-01-21T09:19:29.297Z [DEBUG] [render] initYoga starting
+2026-01-21T09:19:29.300Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-21T09:19:29.300Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-01-21T09:19:29.300Z [DEBUG] Total plugin skills loaded: 0
+2026-01-21T09:19:29.300Z [DEBUG] Total plugin commands loaded: 0
+2026-01-21T09:19:29.300Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-21T09:19:29.310Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, legacy commands: 0)
+2026-01-21T09:19:29.311Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-21T09:19:29.327Z [DEBUG] Stats cache saved successfully (lastComputedDate: 2026-01-20)
+2026-01-21T09:19:29.327Z [DEBUG] Stats cache updated with 4 sessions
+2026-01-21T09:19:29.333Z [DEBUG] [render] initYoga complete
+2026-01-21T09:19:29.341Z [ERROR] AxiosError: Error
+    at sx (B:/~BUN/root/claude.exe:42:1143)
+    at <anonymous> (B:/~BUN/root/claude.exe:47:10084)
+    at emit (node:events:92:22)
+    at endReadableNT (internal:streams/readable:861:50)
+    at processTicksAndRejections (native:7:39)
+    at request (B:/~BUN/root/claude.exe:49:2147)
+    at processTicksAndRejections (native:7:39)
+2026-01-21T09:19:29.344Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169344
+2026-01-21T09:19:29.344Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.346Z [DEBUG] Temp file written successfully, size: 994 bytes
+2026-01-21T09:19:29.346Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.346Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169344 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.347Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.347Z [DEBUG] [Claude in Chrome] Found chrome profiles: Default
+2026-01-21T09:19:29.360Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169360
+2026-01-21T09:19:29.360Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.362Z [DEBUG] Temp file written successfully, size: 1170 bytes
+2026-01-21T09:19:29.362Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.362Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169360 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.363Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.378Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169378
+2026-01-21T09:19:29.378Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.380Z [DEBUG] Temp file written successfully, size: 1206 bytes
+2026-01-21T09:19:29.380Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.380Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169378 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.381Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.402Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169402
+2026-01-21T09:19:29.402Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.404Z [DEBUG] Temp file written successfully, size: 1234 bytes
+2026-01-21T09:19:29.404Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.404Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169402 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.404Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.424Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169424
+2026-01-21T09:19:29.424Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.426Z [DEBUG] Temp file written successfully, size: 1273 bytes
+2026-01-21T09:19:29.426Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.426Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169424 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.428Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.448Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169447
+2026-01-21T09:19:29.448Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.450Z [DEBUG] Temp file written successfully, size: 1311 bytes
+2026-01-21T09:19:29.450Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.450Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169447 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.451Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.473Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169473
+2026-01-21T09:19:29.473Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.475Z [DEBUG] Temp file written successfully, size: 1356 bytes
+2026-01-21T09:19:29.475Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.475Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169473 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.475Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.491Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169491
+2026-01-21T09:19:29.491Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.493Z [DEBUG] Temp file written successfully, size: 1395 bytes
+2026-01-21T09:19:29.493Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.493Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169491 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.494Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.514Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169514
+2026-01-21T09:19:29.514Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.516Z [DEBUG] Temp file written successfully, size: 1425 bytes
+2026-01-21T09:19:29.516Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.516Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169514 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.519Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.538Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169538
+2026-01-21T09:19:29.538Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.540Z [DEBUG] Temp file written successfully, size: 1470 bytes
+2026-01-21T09:19:29.540Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.540Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169538 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.541Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.562Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169562
+2026-01-21T09:19:29.562Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.564Z [DEBUG] Temp file written successfully, size: 1527 bytes
+2026-01-21T09:19:29.564Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.564Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169562 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.565Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.588Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169588
+2026-01-21T09:19:29.588Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.590Z [DEBUG] Temp file written successfully, size: 1557 bytes
+2026-01-21T09:19:29.590Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.590Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169588 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.590Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.605Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169605
+2026-01-21T09:19:29.605Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.606Z [DEBUG] Temp file written successfully, size: 1581 bytes
+2026-01-21T09:19:29.607Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.607Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169605 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.607Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.647Z [DEBUG] [Claude in Chrome] Found edge profiles: Default
+2026-01-21T09:19:29.677Z [DEBUG] [Claude in Chrome] Extension not found in any browser
+2026-01-21T09:19:29.681Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169681
+2026-01-21T09:19:29.681Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.683Z [DEBUG] Temp file written successfully, size: 1624 bytes
+2026-01-21T09:19:29.683Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.683Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169681 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.684Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.704Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987169704
+2026-01-21T09:19:29.704Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:29.705Z [DEBUG] Temp file written successfully, size: 1624 bytes
+2026-01-21T09:19:29.705Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:29.705Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987169704 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:29.715Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:29.725Z [DEBUG] Install: Starting installation process (force=false, target=latest)
+2026-01-21T09:19:29.725Z [DEBUG] Install: Calling installLatest(channelOrVersion=latest, forceReinstall=false)
+2026-01-21T09:19:29.961Z [DEBUG] Checking for native installer update to version 2.1.14
+2026-01-21T09:19:29.968Z [DEBUG] Downloading native installer version 2.1.14
+2026-01-21T09:19:39.503Z [DEBUG] Atomically installed binary to C:\Users\malchik\.local\share\claude\versions\2.1.14
+2026-01-21T09:19:39.575Z [DEBUG] Could not remove empty directory at C:\Users\malchik\.local\bin\claude.exe: Error: ENOENT: no such file or directory, stat 'C:\Users\malchik\.local\bin\claude.exe'
+2026-01-21T09:19:39.750Z [DEBUG] Successfully updated to version 2.1.14
+2026-01-21T09:19:39.758Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude.json.tmp.36736.1768987179758
+2026-01-21T09:19:39.758Z [DEBUG] Preserving file permissions: 100666
+2026-01-21T09:19:39.760Z [DEBUG] Temp file written successfully, size: 1665 bytes
+2026-01-21T09:19:39.760Z [DEBUG] Applied original permissions to temp file
+2026-01-21T09:19:39.760Z [DEBUG] Renaming C:\Users\malchik\.claude.json.tmp.36736.1768987179758 to C:\Users\malchik\.claude.json
+2026-01-21T09:19:39.762Z [DEBUG] File C:\Users\malchik\.claude.json written atomically
+2026-01-21T09:19:39.762Z [DEBUG] Native installer: Set installMethod to "native" and disabled legacy auto-updater for protection
+2026-01-21T09:19:39.784Z [DEBUG] Install: installLatest returned version=2.1.14, wasUpdated=true, lockFailed=false
+2026-01-21T09:19:39.801Z [DEBUG] Install: Setup launcher completed with 1 messages
+2026-01-21T09:19:39.801Z [DEBUG] Install: Setup message: Native installation exists but C:\Users\malchik\.local\bin is not in your PATH. Add it by opening: System Properties → Environment Variables → Edit User PATH → New → Add the path above. Then restart your terminal.
+2026-01-21T09:19:39.801Z [DEBUG] Install: Cleaning up npm installations after successful install
+2026-01-21T09:19:42.553Z [DEBUG] Removed global npm installation of @anthropic-ai/claude-code
+2026-01-21T09:19:42.554Z [DEBUG] Cleaned up 1 npm installation(s)
+2026-01-21T09:19:42.557Z [DEBUG] Writing to temp file: C:\Users\malchik\.claude\settings.json.tmp.36736.1768987182557
+2026-01-21T09:19:42.567Z [DEBUG] Temp file written successfully, size: 37 bytes
+2026-01-21T09:19:42.567Z [DEBUG] Renaming C:\Users\malchik\.claude\settings.json.tmp.36736.1768987182557 to C:\Users\malchik\.claude\settings.json
+2026-01-21T09:19:42.569Z [DEBUG] File C:\Users\malchik\.claude\settings.json written atomically
+2026-01-21T09:19:42.569Z [DEBUG] Install: Saved autoUpdatesChannel=latest to user settings

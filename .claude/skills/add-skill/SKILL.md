@@ -1,0 +1,416 @@
+---
+name: add-skill
+description: "Add specialized craft skills to agents. Default craft principles always active. Everything MUST respect the craft philosophy."
+user-invocable: false
+context: conversation
+allowed-tools: Read, Write, Bash, Task, AskUserQuestion
+---
+
+# Clean Claude Add-Skill — Extend Agent Expertise
+
+**Craft principles are ALWAYS active.** Add specialized expertise on top.
+
+## The Craft Foundation
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                  │
+│  🏛️  CRAFT FOUNDATION (Always Active)                           │
+│  ──────────────────────────────────────────                     │
+│                                                                  │
+│  • SOLID Principles — Single responsibility, Open/closed, etc.  │
+│  • Clean Architecture — Dependencies point inward               │
+│  • Hexagonal (Ports & Adapters) — Domain at center              │
+│  • Explicit Error Handling — Result<T, E>, no throw             │
+│  • Type Safety — Strict mode, no any                            │
+│  • Immutability — Const by default                              │
+│  • Tested — Code always has tests (BDD style)                      │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+## Syntax
+
+```bash
+/add-skill <agent> <skill> [--scope <path>]
+/add-skill --list                     # Show all active skills
+```
+
+## Examples
+
+```bash
+/add-skill architect DDD              # Add DDD expertise to architect
+/add-skill architect CQRS             # Add CQRS patterns
+/add-skill architect CQRS --scope src/orders  # Scoped to a path
+/add-skill backend-engineer Event-Sourcing
+/add-skill frontend-engineer React-Patterns
+/add-skill qa-engineer Property-Testing
+/add-skill --list                     # See what's active
+```
+
+---
+
+## Skill Validation — Craft Guard
+
+**Every skill MUST respect the craft philosophy.**
+
+When you add a skill, Clean Claude validates it:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                  │
+│  /add-skill architect DDD                                        │
+│                                                                  │
+│  ✅ VALIDATION                                                   │
+│                                                                  │
+│  1. Is DDD craft-aligned?                                        │
+│     ✓ Domain at center — aligns with Hexagonal                  │
+│     ✓ Bounded contexts — aligns with Clean Architecture          │
+│     ✓ Aggregates — aligns with Single Responsibility             │
+│     ✓ Value Objects — aligns with Immutability                   │
+│                                                                  │
+│  2. Does it conflict with existing skills?                       │
+│     ✓ No conflicts                                               │
+│                                                                  │
+│  ✅ APPROVED: DDD is craft-aligned                               │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### What Gets Rejected
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                  │
+│  /add-skill architect "Throw exceptions everywhere"              │
+│                                                                  │
+│  ❌ REJECTED                                                      │
+│                                                                  │
+│  This skill violates craft principles:                           │
+│  ✗ Conflicts with: Explicit Error Handling                       │
+│  ✗ Reason: throw is implicit, Result<T, E> is explicit           │
+│                                                                  │
+│  Suggestion: Use "Explicit-Errors" skill instead                 │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Available Skills (Craft-Aligned)
+
+All these skills have been validated against the craft philosophy:
+
+### Architecture Skills
+
+| Skill | Description | Craft Alignment |
+|-------|-------------|-----------------|
+| `DDD` | Domain-Driven Design | ✅ Domain-first, bounded contexts |
+| `CQRS` | Command Query Responsibility Segregation | ✅ Single responsibility, explicit |
+| `Event-Sourcing` | Event store, projections, replay | ✅ Immutability, explicit state |
+| `Hexagonal-Advanced` | Deep ports & adapters patterns | ✅ Extension of core Hexagonal |
+| `Modular-Monolith` | Module boundaries, internal APIs | ✅ Bounded contexts, clean deps |
+
+### Frontend Skills
+
+| Skill | Description | Craft Alignment |
+|-------|-------------|-----------------|
+| `React-Patterns` | Compound components, custom hooks | ✅ Composition, single responsibility |
+| `State-Machines` | XState, statecharts | ✅ Explicit state, predictable |
+| `A11y-Expert` | Accessibility deep-dive | ✅ Domain (user needs) first |
+| `Performance` | Core Web Vitals optimization | ✅ Measurable, testable |
+
+### Backend Skills
+
+| Skill | Description | Craft Alignment |
+|-------|-------------|-----------------|
+| `API-Design` | REST best practices, HATEOAS | ✅ Explicit contracts, testable |
+| `GraphQL` | Schema design, resolvers | ✅ Type-safe, explicit |
+| `Message-Queues` | Event-driven patterns | ✅ Decoupling, explicit |
+| `Caching` | Cache strategies, invalidation | ✅ Explicit, predictable |
+
+### Testing Skills
+
+| Skill | Description | Craft Alignment |
+|-------|-------------|-----------------|
+| `Testing-Advanced` | Mocking strategies, test doubles | ✅ Extension of core testing |
+| `BDD` | Gherkin, behavior specs | ✅ Domain language, explicit |
+| `Contract-Testing` | Pact, consumer-driven | ✅ Explicit contracts |
+| `Property-Testing` | QuickCheck-style, fuzzing | ✅ Exhaustive, type-driven |
+
+---
+
+## How It Works
+
+### Adding a Skill
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    /add-skill architect DDD                      │
+│                                                                  │
+│  1. CRAFT VALIDATION                                             │
+│     ─────────────────                                            │
+│     → Is DDD craft-aligned? ✅                                   │
+│     → Any conflicts? None ✅                                     │
+│                                                                  │
+│  2. SKILL GENERATION                                             │
+│     ─────────────────────                                        │
+│     → Use architect agent to generate DDD skill document         │
+│     → Include: principles, patterns, examples, checklist         │
+│     → Store in .clean-claude/skills/ddd.md                           │
+│                                                                  │
+│  3. CODEBASE ANALYSIS                                            │
+│     ────────────────────                                         │
+│     → Architect analyzes code through DDD lens                   │
+│     → Identifies: bounded contexts, aggregates, violations       │
+│     → Generates refactoring plan                                 │
+│                                                                  │
+│  4. USER APPROVAL                                                │
+│     ─────────────────                                            │
+│     → Show analysis and plan                                     │
+│     → User approves/modifies/rejects                             │
+│                                                                  │
+│  5. REACTIVE LOOP (if approved)                                  │
+│     ──────────────────────────                                   │
+│     → Architect designs changes                                  │
+│     → Engineers implement                                        │
+│     → QA verifies                                                │
+│     → Loop until green                                           │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### Listing Skills
+
+```
+> /add-skill --list
+
+┌─────────────────────────────────────────────────────────────────┐
+│  ACTIVE SKILLS                                                   │
+│                                                                  │
+│  🏛️  CRAFT FOUNDATION (Always Active)                           │
+│      • SOLID                                                     │
+│      • Clean Architecture                                        │
+│      • Hexagonal                                                 │
+│      • Explicit Errors                                           │
+│      • Type Safety                                               │
+│      • Immutability                                              │
+│      • Tested                                                       │
+│                                                                  │
+│  ➕  ADDED SKILLS                                                 │
+│      • architect: DDD (added 2024-01-15)                         │
+│      • architect: CQRS (added 2024-01-16)                        │
+│      • qa-engineer: Property-Testing (added 2024-01-16)         │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Storage
+
+```
+.clean-claude/
+├── context.json          # Includes active skills
+├── skills/
+│   ├── ddd.md            # Generated skill document
+│   ├── cqrs.md           # Generated skill document
+│   └── ...
+└── refactoring-plans/
+    └── ddd-2024-01-15.md # Refactoring plan if applied
+```
+
+### context.json with Skills
+
+```json
+{
+  "stack": { ... },
+  "craftFoundation": [
+    "SOLID",
+    "Clean-Architecture",
+    "Hexagonal",
+    "Explicit-Errors",
+    "Type-Safety",
+    "Immutability",
+    "Tested"
+  ],
+  "addedSkills": [
+    {
+      "name": "DDD",
+      "agent": "architect",
+      "addedAt": "2024-01-15T10:30:00Z",
+      "scope": null
+    },
+    {
+      "name": "CQRS",
+      "agent": "architect",
+      "addedAt": "2024-01-16T09:00:00Z",
+      "scope": "src/features/orders"
+    }
+  ]
+}
+```
+
+---
+
+## Skill Injection into Agents
+
+When agents are spawned, they receive:
+
+1. **Craft Foundation** — Always (non-negotiable)
+2. **Stack Defaults** — Generated for your exact stack
+3. **Project Patterns** — Learned from your clean code
+4. **Added Skills** — Custom skills you've added
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                  │
+│  AGENT CONTEXT = Foundation + Stack + Patterns + Skills         │
+│                                                                  │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────┐ │
+│  │   SOLID     │  │  React      │  │  Your       │  │  DDD    │ │
+│  │   Clean     │  │  Query      │  │  naming     │  │  CQRS   │ │
+│  │   Hexa      │  │  patterns   │  │  patterns   │  │  etc.   │ │
+│  │   Tested       │  │             │  │             │  │         │ │
+│  └─────────────┘  └─────────────┘  └─────────────┘  └─────────┘ │
+│   Foundation       Stack Defaults   Learned         Added       │
+│   (Always)         (Generated)      (If clean)      (Manual)    │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Implementation
+
+### Step 1: Parse Arguments
+
+```typescript
+type Command =
+  | { type: 'add'; agent: string; skill: string; scope?: string }
+  | { type: 'list' };
+
+// /add-skill architect DDD → { type: 'add', agent: 'architect', skill: 'DDD' }
+// /add-skill --list → { type: 'list' }
+```
+
+### Step 2: Validate Against Craft (for add)
+
+```
+Task(
+  subagent_type: "architect",
+  prompt: """
+    Validate if this skill is CRAFT-ALIGNED:
+
+    Skill: DDD (Domain-Driven Design)
+    Target Agent: architect
+
+    Check against craft foundation:
+    1. Does it align with SOLID?
+    2. Does it align with Clean Architecture?
+    3. Does it align with Hexagonal?
+    4. Does it align with Explicit Errors?
+    5. Does it align with Type Safety?
+    6. Does it align with Immutability?
+    7. Does it include tests?
+
+    If ANY conflict → REJECT with explanation
+    If aligned → APPROVE with alignment notes
+  """
+)
+```
+
+### Step 3: Generate Skill Document (if approved)
+
+```
+Task(
+  subagent_type: "architect",
+  prompt: """
+    Generate an expert-level skill document for: DDD
+
+    Structure:
+    ## Core Principles
+    ## Tactical Patterns (with TypeScript examples)
+    ## Strategic Patterns
+    ## Integration with Craft Foundation
+    ## Checklist for Code Review
+    ## Anti-patterns to Avoid
+
+    IMPORTANT: All examples must use Result<T, E>, strict types, etc.
+  """
+)
+```
+
+### Step 4: Analyze and Propose (if requested)
+
+Same reactive flow as before — analyze codebase, propose plan, loop.
+
+---
+
+## Example Session
+
+```
+> /add-skill --list
+
+🏛️ CRAFT FOUNDATION (Always Active)
+   • SOLID • Clean Architecture • Hexagonal
+   • Explicit Errors • Type Safety • Immutability • Tested
+
+➕ ADDED SKILLS
+   (none)
+
+> /add-skill architect DDD
+
+✅ Validating DDD against craft principles...
+   ✓ Aligns with SOLID (aggregates = single responsibility)
+   ✓ Aligns with Clean Architecture (domain at center)
+   ✓ Aligns with Hexagonal (bounded contexts as ports)
+
+📝 Generating DDD skill document...
+   ✓ Stored in .clean-claude/skills/ddd.md
+
+🔍 Analyzing codebase with DDD lens...
+
+📋 Analysis Complete
+
+## Bounded Contexts Identified
+- Users (current)
+- Orders (current)
+- Payments (referenced)
+
+## Violations Found
+| File | Issue | Priority |
+|------|-------|----------|
+| UserService.ts | Anemic domain model | 🔴 High |
+| Order.ts | No aggregate boundaries | 🔴 High |
+
+## Refactoring Plan
+1. **Phase 1**: Create User aggregate
+2. **Phase 2**: Create Order aggregate with items
+
+─────────────────────────────
+
+[Approve & Implement] [Modify Scope] [Just add skill, don't refactor] [Cancel]
+
+> Just add skill, don't refactor
+
+✅ DDD added to architect
+
+> /add-skill --list
+
+🏛️ CRAFT FOUNDATION (Always Active)
+   • SOLID • Clean Architecture • Hexagonal
+   • Explicit Errors • Type Safety • Immutability • Tested
+
+➕ ADDED SKILLS
+   • architect: DDD
+```
+
+---
+
+## Tone
+
+- **Craft-first**: Everything validates against craft principles
+- **Educational**: Explain WHY a skill aligns (or doesn't)
+- **Additive**: Skills enrich, they don't replace
+- **Permanent**: Once added, skills stay (craft accumulates)

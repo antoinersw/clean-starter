@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "SubagentStop": [
+      {
+        "matcher": "qa-engineer|frontend-engineer|architect|product-owner|devops-engineer",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/clean-claude/on-agent-stop.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./scripts/clean-claude/check-test-results.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "installMethod": "native",
+  "autoUpdates": false,
+  "cachedStatsigGates": {
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_use_file_checkpoints": true
+  },
+  "cachedGrowthBookFeatures": {
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 5000,
+      "maxExportBatchSize": 200,
+      "maxQueueSize": 8192
+    },
+    "tengu_mcp_tool_search": false,
+    "tengu_scratch": false,
+    "tengu_log_segment_events": false,
+    "tengu_log_datadog_events": true,
+    "tengu_pid_based_version_locking": true,
+    "tengu_event_sampling_config": {},
+    "tengu_tool_pear": false,
+    "tengu_keybinding_customization": false,
+    "tengu_c4w_usage_limit_notifications_enabled": true,
+    "tengu_thinkback": false,
+    "tengu_sumi": true
+  },
+  "firstStartTime": "2025-09-30T08:57:55.142Z",
+  "userID": "d9cc777725a0cad039c2ebc8448094a5baf9fc7053cbc60c834a800cee80eb8e",
+  "projects": {
+    "C:\\Users\\malchik\\workspace\\hello-coach": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": false,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false
+    }
+  },
+  "sonnet45MigrationComplete": true,
+  "changelogLastFetched": 1774773069382,
+  "fallbackAvailableWarningThreshold": 0.5,
+  "opus45MigrationComplete": true,
+  "opusProMigrationComplete": true,
+  "opusProMigrationTimestamp": 1768987169088,
+  "thinkingMigrationComplete": true,
+  "cachedChromeExtensionInstalled": false,
+  "autoUpdatesProtectedForNative": true,
+  "sonnet1m45MigrationComplete": true,
+  "oauthAccount": {
+    "accountUuid": "bc8779e8-4cf3-4d32-822e-4a6312d2a224",
+    "emailAddress": "antoine.rsw@gmail.com",
+    "organizationUuid": "d5ac940c-cebd-42cd-a229-fe2325e3d162",
+    "hasExtraUsageEnabled": false,
+    "billingType": "none",
+    "accountCreatedAt": "2024-03-30T09:52:59.796113Z",
+    "subscriptionCreatedAt": "2024-04-28T11:39:36.744482Z",
+    "displayName": "Antoine"
+  }
+}
