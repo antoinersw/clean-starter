@@ -2,7 +2,7 @@
 
 // import { z } from 'zod';
 // import { publicProcedure } from '../router';
-// import { CreateUser } from '@repo/application';
+// import { CreateUser } from '@clean-starter/application';
 
 // export const createUser = publicProcedure
 //   .input(z.object({ email: z.string().email() }))

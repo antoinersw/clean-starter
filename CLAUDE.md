@@ -255,7 +255,7 @@ If QA enabled: **Dev + QA run in parallel (same Task() message).**
 |------|------|--------|
 | **stack** | Installed libraries | `specs/stack/stack-skills.md` |
 | **architecture** | Project patterns (CRAFT-validated) | `.clean-claude/architecture-guide.md` |
-| **external** | External repo/folder analysis | `.clean-claude/external-analysis.md` |
+| **external** | External clean-starter/folder analysis | `.clean-claude/external-analysis.md` |
 
 ### CRAFT Validation (Critical)
 
