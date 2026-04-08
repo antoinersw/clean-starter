@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "skills": {
+    "effect-ts": {
+      "source": "PaulRBerg/agent-skills",
+      "sourceType": "github",
+      "computedHash": "414ac6b273f55f21bb769564d2992c6bfe3195c2d9c7b9a9b916c1c7d680c708"
+    },
+    "tailwind-css": {
+      "source": "PaulRBerg/agent-skills",
+      "sourceType": "github",
+      "computedHash": "450a42770722f8a2c6971207914e0ddd15bfe476c4bc0d339cad8919ef5dfc69"
+    }
+  }
+}

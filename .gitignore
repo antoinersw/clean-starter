@@ -124,3 +124,6 @@ docker-compose.override.yml
 
 *storybook.log
 storybook-static
+
+.env.*
+.env

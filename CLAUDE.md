@@ -387,6 +387,7 @@ Generates a report:
 | User input | Forms, events, gestures, keyboard |
 | Client-side state | UI state, caches, local storage |
 | Display formatting | Dates, numbers, i18n for display |
+ 
 
 ### backend-engineer — Data & Business Logic
 

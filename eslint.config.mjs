@@ -1,8 +1,9 @@
 import js from "@eslint/js";
 import boundaries from "eslint-plugin-boundaries";
+import { defineConfig } from "eslint/config";
 import tseslint from "typescript-eslint";
 
-export default tseslint.config(
+export default defineConfig(
   { ignores: ["**/node_modules/**", "**/dist/**"] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
