@@ -84,10 +84,9 @@ Clean Claude transforms Claude Code into a team of Software Craft experts. Clean
 ║      → After design → Notify Dev to implement                            ║
 ║                                                                           ║
 ║   1b. ARCHITECTURE REFERENCE = BLOCKING                                   ║
-║      → ONE file with frontmatter: `clean-claude: architecture-reference` ║
-║      → Claude detects it during project scan → context.json              ║
-║      → IF found → Architect MUST read & follow it                        ║
-║      → Architect MUST confirm: "Architecture Reference: [path] (vN) ✅"  ║
+║      → GATE: ARCHITECTURE.md → chapters in docs/architecture/            ║
+║      → Architect reads the gate, then ONLY the chapter for that layer    ║
+║      → Architect MUST confirm: "Architecture Reference: ARCHITECTURE.md (v2) ✅" ║
 ║      → NO CONFIRMATION = DESIGN REJECTED                                 ║
 ║      → After implementation → Architect proposes updates (versioned)     ║
 ║                                                                           ║
